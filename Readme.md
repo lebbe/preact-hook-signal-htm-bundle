@@ -1,4 +1,4 @@
-Building this project makes a single file, `bundle.js`, that can be included in the browser
+Building this project makes a single file, [preact-bundle.js](/dist/preact-bundle.js), that can be included in the browser
 to make preact applications without any build steps. I didn't find a (working) full bundle
 of preact, preact-hooks, @preact/signals AND htm, so I made this project.
 

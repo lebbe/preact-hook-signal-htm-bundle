@@ -4,7 +4,7 @@ import { terser } from "rollup-plugin-terser";
 export default {
   input: "index.js",
   output: {
-    file: "bundle.js",
+    file: "dist/preact-bundle.js",
     format: "es",
     name: "MyPreactBundle",
   },
