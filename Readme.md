@@ -3,6 +3,8 @@
 ## Concept
 This project is dedicated to removing scaffolding and lowering the threshold for new developers and script kiddies alike! It's about coding the web like it's 1998, but with the power of ultra-modern concepts.
 
+We support many of the [HTML first](https://html-first.com/) movement, like making use of the inbuilt functionality of modern web browsers, stearing clear of build steps, etc.
+
 ## Features
 - **Bundled Technologies**: This bundle integrates Preact, HTM, and @preact/signals.
 - **Simple Exposures**: The project exposes these technologies along with Preact hooks in four simple objects: `{preact, hooks, signals, html}`.
