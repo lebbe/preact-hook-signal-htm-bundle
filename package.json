@@ -1,11 +1,16 @@
 {
   "name": "preact-hook-signal-htm-bundle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "dist/preact-bundle.js",
   "scripts": {
     "build": "rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lebbe/preact-hook-signal-htm-bundle"
+  },
+  "homepage": "https://github.com/lebbe/preact-hook-signal-htm-bundle",
   "keywords": [
     "preact",
     "signal",
