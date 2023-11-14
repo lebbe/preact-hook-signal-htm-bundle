@@ -29,21 +29,14 @@ import {
   useState,
 } from "preact/hooks";
 
-const preact = { h, Component, render, createRef, Fragment };
-
-const signals = {
-  useSignal,
-  useComputed,
-  useSignalEffect,
-  signal,
-  effect,
-  computed,
-  Signal,
-  batch,
-  untracked,
-};
-
-const hooks = {
+export {
+  // preact
+  h,
+  Component,
+  render,
+  createRef,
+  Fragment,
+  // preact/hooks
   useCallback,
   useContext,
   useDebugValue,
@@ -56,6 +49,16 @@ const hooks = {
   useReducer,
   useRef,
   useState,
+  // preact/signals
+  useSignal,
+  useComputed,
+  useSignalEffect,
+  signal,
+  effect,
+  computed,
+  Signal,
+  batch,
+  untracked,
+  // htm
+  html,
 };
-
-export { preact, html, signals, hooks };
