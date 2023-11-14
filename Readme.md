@@ -9,15 +9,19 @@ We support many of the [HTML first](https://html-first.com/) movement, like maki
 ## Features
 
 - **Bundled Technologies**: This bundle integrates Preact, HTM, and @preact/signals.
-- **Simple Exposures**: The project exposes these technologies along with Preact hooks in four simple objects: `{preact, hooks, signals, html}`.
-- **No Build Steps**: HTM is pre-registered with Preact, enabling direct use in web browsers without any build steps.
-- **Ease of Use**: The only tool you need to create web applications is a text editor like Notepad.
+- **Simple Exposures**: The project exposes these technologies along with Preact hooks in one go.
+- **No Build Steps**: HTM is pre-registered with Preact, enabling direct use in web browsers.
+- **Ease of Use**: The only tool you need to create web applications is a text editor like Notepad (allthough we encourage something that supports syntax highlightning).
 
 ## Getting Started
 
 Just include this bundle in your web browser, and start writing JavaScript immediately. No complex setups or scaffolding required!
 
 Happy coding with a touch of nostalgia and modern efficiency!
+
+# Examples
+
+Take a look at our [clown mp3 player](https://lebbe.github.io/preact-hook-signal-htm-bundle/clowns_player/) for an application written with this bundle. The source code can be found [here](https://github.com/lebbe/preact-hook-signal-htm-bundle/tree/main/docs/clowns_player).
 
 # How-to
 
