@@ -29,7 +29,15 @@ Building this project makes a single file, [preact-bundle.js](/dist/preact-bundl
 to make preact applications without any build steps. I didn't find a (working) full bundle
 of preact, preact-hooks, @preact/signals AND htm, so I made this project.
 
+Import from CDN
+
+```javascrtip
+import { render, htm, useEffect, useSignal } from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@1.0.1/dist/preact-bundle.js'
 ```
+
+Or from downloaded file
+
+```javascrtip
 
 import {
   // Preact
