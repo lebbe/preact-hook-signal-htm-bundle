@@ -1,13 +1,12 @@
-import { nodeResolve } from "@rollup/plugin-node-resolve";
-import { terser } from "rollup-plugin-terser";
+import { nodeResolve } from '@rollup/plugin-node-resolve'
+import graph from 'rollup-plugin-graph'
+let graphOptions = { prune: true }
 
 export default {
-  input: "index.js",
+  input: 'index.js',
   output: {
-    file: "dist/preact-bundle.js",
-    format: "es",
-    name: "MyPreactBundle",
+    file: 'dist/preact-bundle.js',
+    format: 'es',
   },
-  treeshake: false,
-  plugins: [nodeResolve({ browser: true }), terser()],
-};
+  plugins: [nodeResolve(), graph(graphOptions)],
+}
