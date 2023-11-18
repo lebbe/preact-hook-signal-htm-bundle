@@ -32,5 +32,9 @@
     "htm": "^3.1.1",
     "preact": "^10.19.2",
     "rollup": "^4.5.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

@@ -61,5 +61,6 @@ export default function VolumeControl({ audio }) {
       audio.volume = ratio
       setBackgroundOn(ratio)
     }}
-    value=${(audio?.volume || 1) * 100} />`
+    value=${(audio?.volume || 1) * 100}
+  />`
 }
