@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 body {
   background: black;
@@ -23,7 +23,7 @@ body {
   position: relative;
   opacity: 1;
   padding-top: 240px;
-  font-family: "Press Start 2P", "VT323", Tahoma, Arial, sans-serif;
+  font-family: 'Press Start 2P', 'VT323', Tahoma, Arial, sans-serif;
 }
 
 .window {
@@ -67,7 +67,7 @@ body {
 
 .window-title::before,
 .window-title::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
   /* Make absolute positioned element be 100% width of parent element **/
@@ -263,14 +263,14 @@ body {
                          
 */
 
-input[type="range"] {
+input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   background: transparent;
 }
 
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid #000000;
@@ -278,7 +278,7 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #000000;
   border-radius: 0;
@@ -313,7 +313,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: #a8b4c3;
 }
 
-input[type="range"]::-moz-range-track {
+input[type='range']::-moz-range-track {
   width: 100%;
   cursor: pointer;
   border-radius: 1.3px;
@@ -322,7 +322,7 @@ input[type="range"]::-moz-range-track {
   border-right: none;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
   cursor: pointer;
   border-bottom: none;
@@ -377,9 +377,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .visualizer {
   display: flex;
-  width: 128px;
   align-items: flex-end;
   height: 50px;
+  justify-content: space-between;
+  width: 178px;
 }
 
 .visualizer .bar {

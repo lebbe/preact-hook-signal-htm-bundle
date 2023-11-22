@@ -1,5 +1,14 @@
 import { html, useState, useRef } from '../preact-bundle.js'
 
+/**
+ *
+ * @param {object} props
+ * @param {object} props.analyserNode
+ * @param {AnalyserNode} props.analyserNode.value
+ * @param {boolean} props.isPlaying
+ *
+ * @returns
+ */
 export default function Visualizer({ analyserNode, isPlaying }) {
   const intervalId = useRef(null)
   const [frequencyData, setFrequencyData] = useState(Array(19).fill('0px'))
@@ -19,10 +28,10 @@ export default function Visualizer({ analyserNode, isPlaying }) {
     analyserNode.value.getByteFrequencyData(dataArray)
 
     const minHz = 100
-    const maxHz = 10000
+    const maxHz = 14000
     const minLog = Math.log(minHz)
     const maxLog = Math.log(maxHz)
-    const scale = (maxLog - minLog) / 18
+    const scale = (maxLog - minLog) / 19
     let newData = []
 
     for (let i = 0; i < 19; i++) {
@@ -39,9 +48,9 @@ export default function Visualizer({ analyserNode, isPlaying }) {
 
   return html`<div class="visualizer">
     ${frequencyData.map(
-      (data) =>
+      (data, index) =>
         html`<div
-          key="{index}"
+          key="${index}"
           class="bar"
           style=${{ height: `${data}` }}
         ></div>`

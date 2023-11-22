@@ -85,6 +85,9 @@ function Wrapper({ songs }) {
   // Some browsers require user interaction to initialize the audio context
   useEffect(function initializeAfterUserInteraction() {
     function initializeAudioContext() {
+      /**
+       * @type {AudioContext}
+       */
       const audioContext = new (window.AudioContext ||
         // @ts-ignore
         window.webkitAudioContext)()

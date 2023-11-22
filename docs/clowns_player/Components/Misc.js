@@ -1,4 +1,4 @@
-import { html } from '../preact-bundle.js'
+import { html, useEffect, useSignal } from '../preact-bundle.js'
 
 export function Window({ children, title }) {
   return html`<div class="window">
@@ -26,9 +26,8 @@ export function ButtonLed({ active }) {
 }
 
 export function Range({ time, audio }) {
-  const timeValue = time.value
   const tracklength = audio?.duration
-  const ratioPlayed = Math.floor((timeValue / tracklength) * 1000)
+  const ratioPlayed = Math.floor((time.value / tracklength) * 1000)
 
   return html`<input
     type="range"
@@ -38,7 +37,6 @@ export function Range({ time, audio }) {
     onchange=${(e) => {
       const ratio = e.target.value / 1000
       audio.currentTime = ratio * tracklength || 0
-      time.value = audio.currentTime
     }}
     value=${ratioPlayed || 0}
   />`

@@ -13,10 +13,6 @@ import PlayerSectionTitle from './PlayerSectionTitle.js'
 import Visualizer from './Visualizer.js'
 import VolumeControl from './VolumeControl.js'
 
-// BIG TODO: Let the audio be the source of truth for the current song
-// and the current time. Use event handlers on audio to update the signals
-// when the song changes or the time changes.
-// Why?! Because HTML First! If the browser API has it, dont reinvent it.
 export function Player({ songs, audio, pannerNode, analyserNode }) {
   const songIndex = useSignal(0)
   const isPlaying = useSignal(false)
@@ -106,7 +102,8 @@ export function Player({ songs, audio, pannerNode, analyserNode }) {
           <div class="player-section player-section-timer">
             <${Timer} time=${time} />
             <${Visualizer} analyserNode=${analyserNode} 
-                           isPlaying=${isPlaying.value} />
+                           isPlaying=${isPlaying.value}
+                           audio=${audio} />
           </div>
           <div class="prevent-flex-child-to-overflow">
             <${PlayerSectionTitle} trackTitle=${`${songs[songIndex].artist} - ${songs[songIndex].name}`} />
