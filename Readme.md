@@ -31,14 +31,18 @@ of preact, preact-hooks, @preact/signals AND htm, so I made this project.
 
 Import from CDN
 
-```javascrtip
-import { render, htm, useEffect, useSignal } from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@1.0.1/dist/preact-bundle.js'
+```javascript
+import {
+  render,
+  htm,
+  useEffect,
+  useSignal,
+} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@1.0.1/dist/preact-bundle.js'
 ```
 
 Or from downloaded file
 
-```javascrtip
-
+```javascript
 import {
   // Preact
   h,
@@ -70,8 +74,8 @@ import {
   batch,
   untracked,
   // HTM
-  html
+  html,
 } from './preact-bundle.js'
 
-// Now you got all the tools you need to make a modern web application, without any scaffolding!
+// Now you got all the tools you need to make a modern browser application, without any scaffolding!
 ```
