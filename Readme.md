@@ -37,7 +37,7 @@ import {
   htm,
   useEffect,
   useSignal,
-} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@2.0.1/dist/preact-bundle.js'
+} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@2.0.2/dist/preact-bundle.js'
 ```
 
 Or from downloaded file
@@ -50,6 +50,10 @@ import {
   render,
   createRef,
   Fragment,
+  cloneElement,
+  toChildArray,
+  options,
+  isValidElement,
   // Hooks
   useCallback,
   useContext,
@@ -73,6 +77,9 @@ import {
   Signal,
   batch,
   untracked,
+  action,
+  createModel,
+  useModel,
   // HTM
   html,
 } from './preact-bundle.js'

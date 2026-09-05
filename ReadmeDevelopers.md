@@ -11,6 +11,7 @@ years since I last updated). Whenever you do, you should:
 
 1. Update deps: `npx ncu -u`
 1. Install updated `npm install`
+1. Add additional functionality (if any) into [./index.js](./index.js) (and update [the readme](./Readme.md))
 1. Build bundle: `npm run build`
 1. Copy `dist/preact-bundle.js` into `docs\clowns_player\preact-bundle.js`
 1. Test docs locally (for instance live-server in vs-code)

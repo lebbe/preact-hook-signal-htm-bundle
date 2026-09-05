@@ -1,6 +1,16 @@
-import { h, Component, render, createRef, Fragment } from "preact";
-import htm from "htm";
-const html = htm.bind(h);
+import {
+  h,
+  Component,
+  render,
+  createRef,
+  Fragment,
+  cloneElement,
+  toChildArray,
+  options,
+  isValidElement,
+} from 'preact'
+import htm from 'htm'
+const html = htm.bind(h)
 
 import {
   useSignal,
@@ -12,7 +22,10 @@ import {
   Signal,
   batch,
   untracked,
-} from "@preact/signals";
+  action,
+  createModel,
+  useModel,
+} from '@preact/signals'
 
 import {
   useCallback,
@@ -27,7 +40,7 @@ import {
   useReducer,
   useRef,
   useState,
-} from "preact/hooks";
+} from 'preact/hooks'
 
 export {
   // preact
@@ -36,6 +49,10 @@ export {
   render,
   createRef,
   Fragment,
+  cloneElement,
+  toChildArray,
+  options,
+  isValidElement,
   // preact/hooks
   useCallback,
   useContext,
@@ -59,6 +76,9 @@ export {
   Signal,
   batch,
   untracked,
+  action,
+  createModel,
+  useModel,
   // htm
   html,
-};
+}
