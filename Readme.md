@@ -37,7 +37,7 @@ import {
   htm,
   useEffect,
   useSignal,
-} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@1.0.1/dist/preact-bundle.js'
+} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@2.0.1/dist/preact-bundle.js'
 ```
 
 Or from downloaded file
