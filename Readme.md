@@ -17,6 +17,35 @@ We support many of the [HTML first](https://html-first.com/) movement, like maki
 
 Just include this bundle in your web browser, and start writing JavaScript immediately. No complex setups or scaffolding required!
 
+## Hello World
+
+Save this as `index.html` and open it in a browser to try a small interactive app:
+
+```html
+<!doctype html>
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="module">
+      import { html, render, useState } from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@3.1.0/dist/preact-bundle.js'
+
+      function App() {
+        const [count, setCount] = useState(0)
+
+        return html`<main>
+          <h1>Hello, world!</h1>
+          <button onClick=${() => setCount(count + 1)}>
+            Clicked ${count} times
+          </button>
+        </main>`
+      }
+
+      render(html`<${App} />`, document.getElementById('app'))
+    </script>
+  </body>
+</html>
+```
+
 Happy coding with a touch of nostalgia and modern efficiency!
 
 # Examples
