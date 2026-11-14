@@ -1,6 +1,6 @@
 {
   "name": "preact-hook-signal-htm-bundle",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "",
   "main": "dist/preact-bundle.js",
   "type": "module",
@@ -31,7 +31,7 @@
     "@rollup/plugin-node-resolve": "^16.0.3",
     "htm": "^3.1.1",
     "preact": "^11.2.0",
-    "rollup": "^4.63.1"
+    "rollup": "^4.68.3"
   },
   "prettier": {
     "semi": false,
