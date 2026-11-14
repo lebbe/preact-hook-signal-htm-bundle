@@ -34,10 +34,12 @@ Import from CDN
 ```javascript
 import {
   render,
-  htm,
+  hydrate,
+  createContext,
+  html,
   useEffect,
   useSignal,
-} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@2.0.2/dist/preact-bundle.js'
+} from 'https://cdn.jsdelivr.net/npm/preact-hook-signal-htm-bundle@3.0.0/dist/preact-bundle.js'
 ```
 
 Or from downloaded file
@@ -48,6 +50,8 @@ import {
   h,
   Component,
   render,
+  hydrate,
+  createContext,
   createRef,
   Fragment,
   cloneElement,
