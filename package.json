@@ -1,6 +1,6 @@
 {
   "name": "preact-hook-signal-htm-bundle",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/preact-bundle.js",
   "type": "module",
@@ -27,10 +27,10 @@
   "author": "Lars-Erik Bruce",
   "license": "MIT",
   "devDependencies": {
-    "@preact/signals": "^2.11.2",
+    "@preact/signals": "^2.11.4",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "htm": "^3.1.1",
-    "preact": "^10.29.8",
+    "preact": "^11.2.0",
     "rollup": "^4.63.1"
   },
   "prettier": {
